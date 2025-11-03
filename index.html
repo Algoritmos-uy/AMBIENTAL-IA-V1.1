@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ambiental_ia-UY</title>
+    <link href="img/ambiental-ia-1.png" rel="icon" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./src/css/icons.css">
+    <link rel="stylesheet" href="./src/css/history.css">
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body class="dark-theme">
+    <div class="overlay"></div>
+    <!-- Video de fondo -->
+    <video autoplay muted loop class="bg-video">
+        <source src="video/background.mp4" type="video/mp4">
+        Tu navegador no soporta video en HTML5.
+    </video>
+
+    <div class="header-controls">
+        <div class="logo-container">
+            <img src="img/ambiental-ia-1.png" alt="Logo de Algoritmos" class="logo" width="60" height="60">
+        </div>
+        <div class="api-key-section">
+            <select id="providerSelect" title="Selecciona el proveedor de API">
+                <option value="openai">OpenAI</option>
+                <option value="deepseek">DeepSeek</option>
+            </select>
+            <input class="clave" type="password" id="apiKeyInput" placeholder="Ingresa tu API Key">
+            <button id="saveApiKey" type="button">Guardar</button>
+        </div>
+        <button id="themeToggle" class="theme-toggle" type="button" title="Cambiar tema" aria-label="Cambiar tema">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+        </button>
+    </div>
+
+    <div class="chat-container">
+
+
+
+        <h1>Asistente Hidráulico Ambiental
+            <i class="fas fa-water" id="water" title="Recursos Hídricos"></i>
+            <i class="fas fa-leaf" id="leaf" title="Medio Ambiente"></i>
+            <i class="fas fa-seedling" id="seedling" title="Licencia Ambiental"></i>
+            <i class="fas fa-recycle" id="recycle" title="Gestión de Residuos"></i>
+            <i class="fas fa-tree" id="tree" title="Conservación"></i>
+            <i class="fas fa-cloud-showers-heavy" id="shower" title="Hidrología Urbana"></i>
+            <i class="fas fa-industry" id="industry" title="Impacto Industrial"></i>
+            <i class="fas fa-landmark" id="landmark" title="Normativa Nacional"></i>
+            <i class="fas fa-balance-scale" id="balance" title="Marco Jurídico"></i>
+        </h1>
+
+        <div class="chat-box" id="chatBox">
+            <!-- Mensajes aparecerán aquí -->
+        </div>
+        <div class="input-area">
+            <input type="text" id="userInput"
+                placeholder="Escribe tu consulta sobre medio ambiente, hidráulica o normativa...">
+            <button id="sendButton" type="button"><i class="fas fa-paper-plane"></i> Enviar</button>
+        </div>
+        <p class="disclaimer">
+            * Este asistente responde exclusivamente sobre temas de ingeniería hidráulica, ambiental y normativa vigente
+            en Uruguay.
+        </p>
+        <div class="history-container">
+            <button id="historyToggle" class="history-button" type="button">
+                <i class="fas fa-history"></i> Historial
+            </button>
+            <div id="historyPanel" class="history-panel">
+                <h3>Consultas Anteriores</h3>
+                <ul id="historyList"></ul>
+                <button id="clearHistory" class="small-button" type="button">Limpiar Historial</button>
+            </div>
+        </div>
+        <footer>
+            <span>Developed By: Willans Junes</span>
+            <div class="logo-container">
+                <img src="img/ambiental-ia-1.png" alt="Logo de Algoritmos" class="logo" width="60" height="60">
+            </div>
+            <div class="logo-container">
+                <img src="img/logo-a.png" alt="Logo de Algoritmos" class="logo" width="60" height="60">
+            </div>
+            <a href="https://www.algoritmps.uy" target="_blank" rel="noopener noreferrer">
+                <p>&copy; 2025 www.algoritmos.uy</p>
+            </a>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script src="src/js/open-deep.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+</body>
+
+</html>

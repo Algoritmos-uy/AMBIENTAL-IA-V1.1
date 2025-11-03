@@ -1,0 +1,76 @@
+/* Estilos para el historial */
+.history-container {
+    position: relative;
+    margin-top: 15px;
+}
+
+.history-button {
+    background: var(--primary-color);
+    padding: 8px 15px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.history-button:hover {
+    background: var(--primary-hover);
+}
+
+.history-panel {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    background: var(--chat-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 100;
+}
+
+.history-panel h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+    font-size: 16px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 8px;
+}
+
+#historyList {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+#historyList li {
+    padding: 8px 12px;
+    margin-bottom: 5px;
+    background: var(--message-bot-bg);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#historyList li:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+.small-button {
+    padding: 6px 12px;
+    font-size: 13px;
+    background: #dc3545;
+    width: 100%;
+}
+
+.small-button:hover {
+    background: #c82333;
+}
+
+/* Mostrar panel de historial cuando está activo */
+.history-panel.active {
+    display: block;
+}

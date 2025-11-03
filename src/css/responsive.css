@@ -1,0 +1,250 @@
+/* Responsive */
+@media (min-width: 820px) and (max-width: 1024px) {
+    body {
+        padding: 0 20px;
+    }
+
+    h1 {
+        font-size: 1.25rem;
+    }
+
+    .chat-container {
+        width: 100%;
+        height: calc(100vh - 30px);
+        margin: 0 auto;
+        padding: 0.75rem;
+    }
+
+    .header-controls {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .api-key-section {
+        width: 100%;
+        margin-bottom: 0.75rem;
+    }
+
+    .history-panel {
+        width: 80%;
+        left: 10%;
+        right: auto;
+    }
+
+    footer {
+        width: 99%;
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 721px) and (max-width: 768px) {
+    .chat-container {
+        margin: 0 auto;
+        width: 95%;
+        padding: 15px;
+        height: 100%;
+    }
+
+    #water,
+    #recycle,
+    #tree,
+    #shower,
+    #industry,
+    #landmark,
+    #balance,
+    #leaf,
+    #seedling {
+        font-size: 0.75rem;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    .header-controls {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .api-key-section {
+        width: 100%;
+    }
+
+    .disclaimer {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .history-panel {
+        width: 90%;
+        left: 5%;
+        right: auto;
+    }
+
+    footer {
+        width: 95%;
+        font-size: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 0.75rem;
+    }
+
+    #water,
+    #recycle,
+    #tree,
+    #shower,
+    #industry,
+    #landmark,
+    #balance,
+    #leaf,
+    #seedling {
+        display: none;
+    }
+
+    button {
+        height: 1.5rem;
+        font-size: 0.75rem;
+    }
+
+    select {
+        max-width: 20rem;
+        width: 100%;
+    }
+    .clave {
+        height: 1.5rem;
+        max-width: 20rem;
+        width: 93%;
+    }
+
+    .header-controls .api-key-section {
+        flex-direction: column;
+        align-items: center;
+        max-width: 20rem;
+        width: 100%;
+    }
+
+    .chat-container {
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+    }
+
+    .message {
+        max-width: 95%;
+        padding: 10px 12px;
+    }
+
+    button {
+        padding: 10px 15px;
+        max-width: 20rem;
+        width: 100%;
+    }
+
+    .disclaimer {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .input-area {
+        flex-direction: column;
+    }
+
+    footer {
+        width: 95%;
+        font-size: 0.7rem;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+    .header-controls {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chat-container {
+        padding: 0.5rem;
+    }
+
+    #water,
+    #recycle,
+    #tree,
+    #shower,
+    #industry,
+    #landmark,
+    #balance,
+    #leaf,
+    #seedling {
+        display: none;
+    }
+
+    h1 {
+        font-size: 0.65rem;
+    }
+
+    .message {
+        max-width: 90%;
+        padding: 8px 10px;
+    }
+
+    .disclaimer {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    button {
+        padding: 8px 12px;
+    }
+
+    footer {
+        width: 95%;
+        font-size: 0.6rem;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 720px) {
+    .header-controls {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #water,
+    #recycle,
+    #tree,
+    #shower,
+    #industry,
+    #landmark,
+    #balance,
+    #leaf,
+    #seedling {
+        font-size: 0.75rem;
+    }
+
+    h1 {
+        font-size: 0.75rem;
+    }
+
+    .disclaimer {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+}
