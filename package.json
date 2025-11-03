@@ -1,0 +1,41 @@
+{
+  "name": "ambiental-ia-v1.1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Algoritmos-uy/AMBIENTAL-IA-V1.1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Algoritmos-uy/AMBIENTAL-IA-V1.1/issues"
+  },
+  "homepage": "https://github.com/Algoritmos-uy/AMBIENTAL-IA-V1.1#readme",
+  "devDependencies": {
+    "electron": "^29.4.6",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.algoritmosuy.ambientalia",
+    "productName": "Ambiental IA",
+    "directories": {
+      "buildResources": "src/img"
+    },
+    "files": [
+      "src/**/*",
+      "index.html"
+    ],
+    "win": {
+      "icon": "src/img/icon.ico"
+    }
+  }
+}

@@ -196,7 +196,7 @@ try {
             "Authorization": `Bearer ${apiKey}`
                 },
                 body: JSON.stringify({
-                    model: PROVIDER === 'openai' ? "gpt-5" : "deepseek-chat",
+                    model: PROVIDER === 'openai' ? "gpt-4o" : "deepseek-chat", // Cambia "gpt-5" por "gpt-4o"
                     messages: [
                         {
                             role: "system",

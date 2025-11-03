@@ -5,15 +5,15 @@ function createWindow() {
     const mainWindow = new BrowserWindow({
         width: 1200,
         height: 800,
-        icon: path.join(__dirname, 'img', 'icon.ico'),
+        icon: path.join(__dirname, 'img', 'icon.ico'), // Ruta corregida: img dentro de src
         webPreferences: {
-            preload: path.join(__dirname,'src', 'preload.js'),
+            preload: path.join(__dirname, 'preload.js'),
             contextIsolation: true,
             nodeIntegration: false
         }
     });
 
-    mainWindow.loadFile('index.html');
+    mainWindow.loadFile(path.join(__dirname, '..', 'index.html')); // Asegura la ruta correcta al index.html
 
     // Menú contextual personalizado
     mainWindow.webContents.on('context-menu', (event, params) => {
@@ -36,7 +36,6 @@ function createWindow() {
     });
 }
 
-// Reemplazar el icono de Electron en el archivo .exe
 app.on('ready', createWindow);
 
 app.on('window-all-closed', () => {
